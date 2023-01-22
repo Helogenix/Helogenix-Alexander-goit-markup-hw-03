@@ -18,50 +18,47 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <!-- header -->
-      <header>
-        <a href="./index.html" class="logo-link"
+    <!-- header -->
+    <header class="main-header">
+      <nav class="container main-nav">
+        <a class="logo-link" href="./index.html"
           ><span class="logo-web">Web</span>Studio</a
         >
         <!-- navigation -->
-        <nav>
-          <ul class="nav">
-            <div class="container-nav">
-            <li>
-              <a class="nav-a" href="./index.html">Studio</a>
-            </li>
-            <li>
-              <a class="nav-portfolio" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li>
-              <a class="nav-item" href="">Contacts</a>
-            </li>
-            </div>
-          </ul>
-          
-        </nav>
-        <!-- contacts -->
-        <ul class="auth-nav">
-          <li>
-            <a class="nav-a" href="mailto:">info@devstudio.com</a>
+        <ul class="nav">
+          <li class="item">
+            <a class="link" href="./index.html">Studio</a>
           </li>
-          <li>
-            <a class="nav-a" href="tel:">+11 (000) 111-11-11</a>
+          <li class="item">
+            <a class="nav-portfolio link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="item">
+            <a class="link" href="">Contacts</a>
           </li>
         </ul>
-      </header>
+        <!-- contacts -->
+        <ul class="auth-nav">
+          <li class="item">
+            <a class="link" href="mailto:">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a class="link" href="tel:">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
       <!-- Our portfolio -->
       <main>
         <!-- filter button navigation -->
-        <section>
+        <section class="section-proj">
+          <div class="container">
           <h1 class="visually-hidden">Our portfolio</h1>
-          <ul class="container">
-            <li><button class="filter-btn" type="button">All</button></li>
-            <li><button class="filter-btn" type="button">Web Site</button></li>
-            <li><button class="filter-btn" type="button">App</button></li>
-            <li><button class="filter-btn" type="button">Design</button></li>
-            <li><button class="filter-btn" type="button">Marketing</button></li>
+          <ul class="filter">
+            <li class="item"><button class="filter-btn" type="button">All</button></li>
+            <li class="item"><button class="filter-btn" type="button">Web Site</button></li>
+            <li class="item"><button class="filter-btn" type="button">App</button></li>
+            <li class="item"><button class="filter-btn" type="button">Design</button></li>
+            <li class="item"><button class="filter-btn" type="button">Marketing</button></li>
           </ul>
           <!-- row-1 -->
           <div class="container">
@@ -74,8 +71,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-cont">
                 <h2 class="project-title">Banking App Interface Concept</h2>
                 <p class="prooject-descr">App</p>
+                </div>
               </li>
 
               <li class="item">
@@ -86,8 +85,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-cont">
                 <h2 class="project-title">Cashless Payment</h2>
                 <p class="prooject-descr">Marketing</p>
+                </div>
               </li>
 
               <li class="item">
@@ -98,8 +99,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-cont">
                 <h2 class="project-title">Meditaion App</h2>
                 <p class="prooject-descr">App</p>
+                </div>
               </li>
               <!-- row-2 -->
 
@@ -111,8 +114,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-cont">
                 <h2 class="project-title">Taxi Service</h2>
                 <p class="prooject-descr">Marketing</p>
+                </div>
               </li>
 
               <li class="item">
@@ -123,8 +128,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-cont">
                 <h2 class="project-title">Screen Illustrations</h2>
                 <p class="prooject-descr">Design</p>
+                </div>
               </li>
 
               <li class="item">
@@ -135,8 +142,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-cont">
                 <h2 class="project-title">Online Courses</h2>
                 <p class="prooject-descr">Marketing</p>
+                </div>
               </li>
 
               <!-- row-3 -->
@@ -149,8 +158,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-cont">
                 <h2 class="project-title">Instagram Stories Concept</h2>
                 <p class="prooject-descr">Design</p>
+                </div>
               </li>
 
               <li class="item">
@@ -161,8 +172,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-cont">
                 <h2 class="project-title">Organic Food</h2>
                 <p class="prooject-descr">Web Site</p>
+                </div>
               </li>
               <li class="item">
                 <img
@@ -172,8 +185,10 @@
                   width="360"
                   height="300"
                 />
+                <div class="project-cont">
                 <h2 class="project-title">Fresh Coffee</h2>
                 <p class="prooject-descr">Web Site</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -181,13 +196,15 @@
       </main>
       <!-- footer -->
       <footer class="footer">
-        <a href="./index.html" class="footer-logo"
-          ><span class="logo-web">Web</span>Studio</a
-        >
-        <p class="footer-descr">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
+        <div class="container">
+          <a href="./index.html" class="footer-logo"
+            ><span class="logo-web">Web</span>Studio</a
+          >
+          <p class="footer-descr">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
       </footer>
     </div>
   </body>
