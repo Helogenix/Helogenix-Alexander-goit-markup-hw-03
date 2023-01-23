@@ -166,12 +166,18 @@ color: var(--pressed-state) ;
 
 /* main page index.html */
 
+.section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
 .hero-section {
   padding: 188px 0;
 }
 .hero {
   text-align: center;
   background-color: var(--brand-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -186,12 +192,20 @@ color: var(--pressed-state) ;
 }
 
 .hero-btn {
+  display: inline-block;
+  padding: 16px 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  
   background-color: var(--primary-brand-color);
   cursor: pointer;
   color: var(--white-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .hero-btn:hover,
@@ -213,7 +227,6 @@ color: var(--pressed-state) ;
 .advant .item + .item {
   margin-left: 24px;
 }
-
 
 .advant-title {
   margin: 0;
